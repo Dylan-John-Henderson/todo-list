@@ -5,6 +5,7 @@ function useEditableTitle(initialTitle) {
   const [workingTitle, setWorkingTitle] = useState(initialTitle);
 
   function startEditing() {
+    setWorkingTitle(initialTitle);
     setIsEditing(true);
   }
 
